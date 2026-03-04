@@ -1,71 +1,57 @@
-# E-Commerce Retail Sales Dashboard – Power BI
+# E-Commerce Retail Sales Dashboard & Data Analysis
 
-An interactive *Power BI dashboard* for analyzing e-commerce retail sales performance.  
-This project cleans, transforms, and visualizes an e-commerce dataset to uncover insights into sales trends, brand performance, category distribution, geographic sales, discounts, ratings, stock levels, and more.
+*Interactive Power BI dashboard + data cleaning pipeline* for analyzing an Indian e-commerce retail dataset (~20–50K+ products).
 
-
-## Project Overview
-
-This dashboard helps stakeholders monitor key retail metrics:
-- Total delivery days, revenue (total price), top brands, units sold, and ratings
-- Performance breakdown by *brand*, *category*, *city*, *seller*, *payment method*, and *month*
-- Discount impact, product ratings, and color-based scoring
-
-Built with *Power BI Desktop* using data cleaning in *Power Query* and DAX calculations for dynamic measures.
+This repository contains:
+- Cleaned and transformed *e-commerce retail dataset* (Excel source)
+- *Power Query* transformation steps (including month name extraction, blank row removal, filtering, type changes, etc.)
+- Fully built *Power BI Desktop dashboard* visualizing key retail performance metrics
 
 ## Dashboard Highlights
 
-*Key KPIs (at a glance):*
+### KPIs (Cards)
 - Total Delivery Days: *481K*
-- Total Price (Revenue): *₹2.41 Billion*
+- Total Price (Revenue proxy): *₹2.41 Billion*
 - Most Common Brand: *Puma*
 - Total Units Sold: *201 Million*
 - Total Ratings/Reviews: *320K+*
 
-*Main Visuals Include:*
-- Delivery days by brand (horizontal bar)
-- Total price by category (clustered column)
-- Total price trend by month (line/area chart)
-- Delivery days by payment method
-- Total discount % by category (donut chart)
-- Total price by city (bar chart)
-- Brand performance by ratings
-- Product score by category and color
+### Key Visuals
+- *Delivery days by Brand* (highest: LG, Apple, Prestige, Philips, etc.)
+- *Total Price by Category* (Beauty, Toys, Fashion, Sports, Electronics leading)
+- *Total Price trend by Month* (seasonal pattern visible — peaks in Mar, Oct–Nov)
+- *Delivery days by Payment Method* (UPI/CARD, CARD/Wallet, COD variants dominant)
+- *Total Discount by Category* (donut chart)
+- *Total Price by City* (Delhi slightly leads, followed by Pune, Chennai, Hyderabad, etc.)
+- *Brand performance by average rating / score*
+- *Product score by Category & Colour* (Silver, Black, Gold consistently high)
 
-
-Slicers/filters for:
+### Slicers / Interactivity
 - Brand
 - Category
+- Seller city (implicit through visuals)
 
-## Data Source & Preparation
-
-*Raw data*: Excel file containing ~20 sample records (product_id, name, category, brand, seller, city, price, discount %, final price, rating, reviews, stock, units sold, listing date, etc.)
-
-*Cleaning & Transformation steps (Power Query):*
+## Data Preparation (Power Query)
+- Removed blank/invalid rows
 - Promoted headers
 - Changed column data types
+- Filtered inconsistent/out-of-range rows (multiple filter steps)
+- Added calculated column: *Month Name* (Date.MonthName([listing_date]))
 - Removed unnecessary columns
-- Filtered out blank/invalid rows (multiple steps)
-- Added calculated column: *Month Name* using Date.MonthName([listing_date])
 
+## Tools Used
+- Microsoft Excel
+- Power Query (M language)
+- Power BI Desktop
+- DAX (for measures & calculated columns in visuals)
 
-*Sample raw data preview (Excel):*
-
-
-## Tools & Technologies
-
-- *Power BI Desktop* (data modeling, DAX, visuals)
-- *Power Query* (ETL – extract, transform, load)
-- *DAX* (measures for aggregations, KPIs, dynamic calculations)
-- *Excel* (source data)
-
-## How to Use / Explore the Dashboard
-
-1. Download or clone this repository
-2. Open the .pbix file in *Power BI Desktop*
-   - (If you upload the .pbix file to this repo, users can directly open it)
-3. Interact with slicers (Brand, Category) to filter visuals dynamically
-4. Hover over charts for tooltips and cross-highlighting
+## Purpose
+Great starter / intermediate project for:
+- Power BI dashboard development
+- Retail / e-commerce analytics
+- Data cleaning & transformation in Power Query
+- Visual storytelling with KPIs, trends, geographic & categorical breakdowns
+ Hover over charts for tooltips and cross-highlighting
 
 
 <img width="1920" height="1080" alt="Screenshot 2026-03-03 183450" src="https://github.com/user-attachments/assets/41eb06ee-3512-4189-b088-02659102b05e" />
