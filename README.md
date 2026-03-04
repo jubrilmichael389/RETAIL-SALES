@@ -3,7 +3,6 @@
 An interactive *Power BI dashboard* for analyzing e-commerce retail sales performance.  
 This project cleans, transforms, and visualizes an e-commerce dataset to uncover insights into sales trends, brand performance, category distribution, geographic sales, discounts, ratings, stock levels, and more.
 
-![Dashboard Overview 1](images/dashboard_overview_1.png)
 
 ## Project Overview
 
@@ -33,7 +32,6 @@ Built with *Power BI Desktop* using data cleaning in *Power Query* and DAX calcu
 - Brand performance by ratings
 - Product score by category and color
 
-![Dashboard Overview 2](images/dashboard_overview_2.png)
 
 Slicers/filters for:
 - Brand
@@ -50,11 +48,9 @@ Slicers/filters for:
 - Filtered out blank/invalid rows (multiple steps)
 - Added calculated column: *Month Name* using Date.MonthName([listing_date])
 
-![Power Query Editor – Adding Month Name](images/power_query_month_name.png)
 
 *Sample raw data preview (Excel):*
 
-![Excel Data Preview](images/excel_data_preview.png)
 
 ## Tools & Technologies
 
@@ -70,3 +66,11 @@ Slicers/filters for:
    - (If you upload the .pbix file to this repo, users can directly open it)
 3. Interact with slicers (Brand, Category) to filter visuals dynamically
 4. Hover over charts for tooltips and cross-highlighting
+
+<img width="1920" height="1080" alt="Screenshot 2026-03-03 183701" src="https://github.com/user-attachments/assets/69a515cb-d0f7-42eb-9a46-e913f8e87371" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-03 183558" src="https://github.com/user-attachments/assets/efb667c3-ad47-4508-a71b-63c74f67bd4b" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-03 183450" src="https://github.com/user-attachments/assets/41eb06ee-3512-4189-b088-02659102b05e" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-03 183723" src="https://github.com/user-attachments/assets/15a70451-3fcf-4e21-81f9-1742862fc04e" />
+
+Created by Jubril Michael
+Email: jubrilmichael389@gmail.com
