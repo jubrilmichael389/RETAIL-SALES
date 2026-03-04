@@ -67,9 +67,10 @@ Slicers/filters for:
 3. Interact with slicers (Brand, Category) to filter visuals dynamically
 4. Hover over charts for tooltips and cross-highlighting
 
-<img width="1920" height="1080" alt="Screenshot 2026-03-03 183701" src="https://github.com/user-attachments/assets/69a515cb-d0f7-42eb-9a46-e913f8e87371" />
+
 <img width="1920" height="1080" alt="Screenshot 2026-03-03 183558" src="https://github.com/user-attachments/assets/efb667c3-ad47-4508-a71b-63c74f67bd4b" />
 <img width="1920" height="1080" alt="Screenshot 2026-03-03 183450" src="https://github.com/user-attachments/assets/41eb06ee-3512-4189-b088-02659102b05e" />
+<img width="1920" height="1080" alt="Screenshot 2026-03-03 183701" src="https://github.com/user-attachments/assets/69a515cb-d0f7-42eb-9a46-e913f8e87371" />
 <img width="1920" height="1080" alt="Screenshot 2026-03-03 183723" src="https://github.com/user-attachments/assets/15a70451-3fcf-4e21-81f9-1742862fc04e" />
 
 Created by Jubril Michael
